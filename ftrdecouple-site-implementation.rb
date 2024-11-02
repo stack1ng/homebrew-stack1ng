@@ -5,25 +5,49 @@
 class FtrdecoupleSiteImplementation < Formula
   desc ""
   homepage "https://www.futuralabs.app/"
-  version "0.1.13"
+  version "0.1.14"
 
   depends_on "zig"
-  depends_on :macos
 
-  on_intel do
-    url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.13/homebrew-stack1ng_0.1.13_darwin_amd64.tar.gz"
-    sha256 "f59cff540f30a596aeeab4af22e551da07770de6197e0bb6166f8ae47468666b"
+  on_macos do
+    on_intel do
+      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.14/homebrew-stack1ng_0.1.14_darwin_amd64.tar.gz"
+      sha256 "8793d5884ec2fdc4705cd7cdd59948f5d8378086686ae57f8f6ee29191795d0f"
 
-    def install
-      bin.install "ftr"
+      def install
+        bin.install "ftr"
+      end
+    end
+    on_arm do
+      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.14/homebrew-stack1ng_0.1.14_darwin_arm64.tar.gz"
+      sha256 "24ef37271753a16d06b1b0f833b7c577c34b437e831e31d5cd9992ff85740d48"
+
+      def install
+        bin.install "ftr"
+      end
     end
   end
-  on_arm do
-    url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.13/homebrew-stack1ng_0.1.13_darwin_arm64.tar.gz"
-    sha256 "096af3387800a64a6b9aa3b381c47a9f1210b1b8f3eb6f58bb6114c066a1c03c"
 
-    def install
-      bin.install "ftr"
+  on_linux do
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.14/homebrew-stack1ng_0.1.14_linux_amd64.tar.gz"
+        sha256 "c26ccb258a7f2ad0a08e9929788f1e1e153e7a8a7f26fb1344270c178cecacdd"
+
+        def install
+          bin.install "ftr"
+        end
+      end
+    end
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.14/homebrew-stack1ng_0.1.14_linux_arm64.tar.gz"
+        sha256 "c06ff2be257db716ecaab66e0038d0a29339a19996715f380835a3d5e1a169e4"
+
+        def install
+          bin.install "ftr"
+        end
+      end
     end
   end
 end
