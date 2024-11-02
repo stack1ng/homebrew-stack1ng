@@ -5,22 +5,22 @@
 class FtrdecoupleSiteImplementation < Formula
   desc ""
   homepage "https://www.futuralabs.app/"
-  version "0.1.12"
+  version "0.1.13"
 
   depends_on "zig"
   depends_on :macos
 
   on_intel do
-    url "https://github.com/stack1ng/futura/releases/download/v0.1.12/futura_0.1.12_darwin_amd64.tar.gz"
-    sha256 "4fd3e88cbfec3663575dc34e6f92e0e7550392ce1ffa710b72465c360fb07f80"
+    url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.13/homebrew-stack1ng_0.1.13_darwin_amd64.tar.gz"
+    sha256 "f59cff540f30a596aeeab4af22e551da07770de6197e0bb6166f8ae47468666b"
 
     def install
       bin.install "ftr"
     end
   end
   on_arm do
-    url "https://github.com/stack1ng/futura/releases/download/v0.1.12/futura_0.1.12_darwin_arm64.tar.gz"
-    sha256 "01ea6540480ce741a811a691054851b036ba973930d88212537eede8d848b025"
+    url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.13/homebrew-stack1ng_0.1.13_darwin_arm64.tar.gz"
+    sha256 "096af3387800a64a6b9aa3b381c47a9f1210b1b8f3eb6f58bb6114c066a1c03c"
 
     def install
       bin.install "ftr"
