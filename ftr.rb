@@ -5,22 +5,22 @@
 class Ftr < Formula
   desc ""
   homepage "https://www.futuralabs.app/"
-  version "0.1.28"
+  version "0.1.29"
 
   depends_on "zig"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.28/homebrew-stack1ng_0.1.28_darwin_amd64.tar.gz"
-      sha256 "5f6489fc4675ed72dc8ffd4a5688074849f7325f6762ce3c9415a5c19e3e3baf"
+      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.29/homebrew-stack1ng_0.1.29_darwin_amd64.tar.gz"
+      sha256 "fb145344faf9e3ef529460721dd85e6d06bd0c3a32b803a273b13a154f064063"
 
       def install
         bin.install "ftr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.28/homebrew-stack1ng_0.1.28_darwin_arm64.tar.gz"
-      sha256 "7135626386b9d74b67c2233f4ca36d895dbec23021ff8fac40199833b3d1e148"
+      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.29/homebrew-stack1ng_0.1.29_darwin_arm64.tar.gz"
+      sha256 "412d53c459e10dfcabc505fb32a892050cd8326b4bd1831efc91daf988824968"
 
       def install
         bin.install "ftr"
@@ -31,8 +31,8 @@ class Ftr < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.28/homebrew-stack1ng_0.1.28_linux_amd64.tar.gz"
-        sha256 "ff138457f4194a602cc9d46e35071f1686f75d2eaf80d0e7d833b538b1bfa25d"
+        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.29/homebrew-stack1ng_0.1.29_linux_amd64.tar.gz"
+        sha256 "ba3c214eb2f1a13a248ba64b54f7a425317fe002b94ec07bd0f7894dc1ac94d2"
 
         def install
           bin.install "ftr"
@@ -41,8 +41,8 @@ class Ftr < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.28/homebrew-stack1ng_0.1.28_linux_arm64.tar.gz"
-        sha256 "0e094a9a6ceb2fceb095bcaf83db71878f088af1ecf392708c1e97f8b54423ae"
+        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.1.29/homebrew-stack1ng_0.1.29_linux_arm64.tar.gz"
+        sha256 "28938a7ecfa6e17ccd919d0a4dd63bf2d0a8268289b9b70edd9f3970ada83f69"
 
         def install
           bin.install "ftr"
