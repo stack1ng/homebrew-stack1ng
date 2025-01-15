@@ -5,22 +5,22 @@
 class FtrdevreloadDeltaCompression < Formula
   desc ""
   homepage "https://www.futuralabs.app/"
-  version "0.0.1-devreload-delta"
+  version "0.0.2"
 
   depends_on "zig"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.1-devreload-delta/homebrew-stack1ng_0.0.1-devreload-delta_darwin_amd64.tar.gz"
-      sha256 "84ad934192654c4ed75b138b63cde8bf8c5bd19ad35b8f5ca9d145c6486a6f80"
+      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.2/homebrew-stack1ng_0.0.2_darwin_amd64.tar.gz"
+      sha256 "0df7bd148a8f6622e4096d0981ccec92386139d7db9f88ae5a4f17064add0b5c"
 
       def install
         bin.install "ftr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.1-devreload-delta/homebrew-stack1ng_0.0.1-devreload-delta_darwin_arm64.tar.gz"
-      sha256 "ff959007d5589dccb0548f81e79f0a9369481106b151408f737fd911eaad2f61"
+      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.2/homebrew-stack1ng_0.0.2_darwin_arm64.tar.gz"
+      sha256 "792498ea2fcaeb72e3afeb7d22269c7a5527af4b2ecfec6ed2bc0b7f03e94924"
 
       def install
         bin.install "ftr"
@@ -31,8 +31,8 @@ class FtrdevreloadDeltaCompression < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.1-devreload-delta/homebrew-stack1ng_0.0.1-devreload-delta_linux_amd64.tar.gz"
-        sha256 "0c90e2ae2e6303261d94de6e757a27958e43a622e10e3071f81a5e6b4fd3818c"
+        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.2/homebrew-stack1ng_0.0.2_linux_amd64.tar.gz"
+        sha256 "94e5844fd310963fcf3ae018a290e957a6bdfced71aeeb09aef2afe536090009"
 
         def install
           bin.install "ftr"
@@ -41,8 +41,8 @@ class FtrdevreloadDeltaCompression < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.1-devreload-delta/homebrew-stack1ng_0.0.1-devreload-delta_linux_arm64.tar.gz"
-        sha256 "ed812bed3749d783526828f6bdaf11de88c02ebb4f35b3165bee37fa387df9aa"
+        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.2/homebrew-stack1ng_0.0.2_linux_arm64.tar.gz"
+        sha256 "8ffd17c5efbb64ed5c755d1ced562a2ce9cd5d0840c0c40e01e91d8496a37b1a"
 
         def install
           bin.install "ftr"
