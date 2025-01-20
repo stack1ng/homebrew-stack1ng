@@ -5,23 +5,23 @@
 class FtrdevreloadDeltaCompression < Formula
   desc ""
   homepage "https://www.futuralabs.app/"
-  version "0.0.7"
+  version "0.0.8"
 
   depends_on "zig"
   depends_on "zstd"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.7/homebrew-stack1ng_0.0.7_darwin_amd64.tar.gz"
-      sha256 "571644f12f9254e3819c957df9911466611671cb5dc2b9fc1e4b32295e291c46"
+      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.8/homebrew-stack1ng_0.0.8_darwin_amd64.tar.gz"
+      sha256 "4b7bcfafd3775771934088dede4110de4c057c699a67ef5c0f83dc5f35d1a19a"
 
       def install
         bin.install "ftr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.7/homebrew-stack1ng_0.0.7_darwin_arm64.tar.gz"
-      sha256 "2a99ccc03a7310d7540f86c847b525822760b64ffc056e615acaf7695fd764da"
+      url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.8/homebrew-stack1ng_0.0.8_darwin_arm64.tar.gz"
+      sha256 "5708e469aaf6c66c9f447e4dfdf7167b2cd772f2a3c87da7aacd31578db583db"
 
       def install
         bin.install "ftr"
@@ -32,8 +32,8 @@ class FtrdevreloadDeltaCompression < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.7/homebrew-stack1ng_0.0.7_linux_amd64.tar.gz"
-        sha256 "5dd881f016caf74f0cbe9496ba398b80ca292b63d6c44ed2c5cfc5ecaf71fb53"
+        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.8/homebrew-stack1ng_0.0.8_linux_amd64.tar.gz"
+        sha256 "2b735393d48839ac6474e9a10aae50e258b1fa5bba0ee05d099ff5374f50c82f"
 
         def install
           bin.install "ftr"
@@ -42,8 +42,8 @@ class FtrdevreloadDeltaCompression < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.7/homebrew-stack1ng_0.0.7_linux_arm64.tar.gz"
-        sha256 "16238fbc552ab790245088a25fe3375203d9f741e1fa767ffdc5627231e758ca"
+        url "https://github.com/stack1ng/homebrew-stack1ng/releases/download/v0.0.8/homebrew-stack1ng_0.0.8_linux_arm64.tar.gz"
+        sha256 "26b8c03f0f0a65ba77dd765da4e98fc5d3cff755ba943a40409d59b57e3d38bd"
 
         def install
           bin.install "ftr"
