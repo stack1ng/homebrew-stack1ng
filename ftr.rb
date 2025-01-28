@@ -5,23 +5,23 @@
 class Ftr < Formula
   desc ""
   homepage "https://www.futuralabs.app/"
-  version "0.1.46"
+  version "0.1.47"
 
   depends_on "zig"
   depends_on "zstd"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.1.46/ftr-dist_0.1.46_darwin_amd64.tar.gz"
-      sha256 "808cadf26f53186c667a1330e0bf6e41b6ecffecf44fa8ba3532ccaf84e4400e"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.1.47/ftr-dist_0.1.47_darwin_amd64.tar.gz"
+      sha256 "1749c3cff4406c65e7b65bc49cc7b033301b0983240e45b2567391826c4ceae9"
 
       def install
         bin.install "ftr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.1.46/ftr-dist_0.1.46_darwin_arm64.tar.gz"
-      sha256 "12e819bac686913ccdd10bc80a5cdaf7296fffdb78544298a7e251da56a169ff"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.1.47/ftr-dist_0.1.47_darwin_arm64.tar.gz"
+      sha256 "fe2cf80c27ab2165fd5ee6831bb02dfe08822ecc27f0af7ab0a4cdf803a02d08"
 
       def install
         bin.install "ftr"
@@ -32,8 +32,8 @@ class Ftr < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/futura-platform/ftr-dist/releases/download/v0.1.46/ftr-dist_0.1.46_linux_amd64.tar.gz"
-        sha256 "de48c60800709c25c223f242c076883eae81c764e05cc81763f8658d2a1b4e6c"
+        url "https://github.com/futura-platform/ftr-dist/releases/download/v0.1.47/ftr-dist_0.1.47_linux_amd64.tar.gz"
+        sha256 "192ea1928623c689a136ddaf264b4f34181142c87a1e243eaa60c736cc96663d"
 
         def install
           bin.install "ftr"
@@ -42,8 +42,8 @@ class Ftr < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/futura-platform/ftr-dist/releases/download/v0.1.46/ftr-dist_0.1.46_linux_arm64.tar.gz"
-        sha256 "2a8a1eccc5695e22ce7bb4f2fa12fedccdba76f68f3e26432e00814623030912"
+        url "https://github.com/futura-platform/ftr-dist/releases/download/v0.1.47/ftr-dist_0.1.47_linux_arm64.tar.gz"
+        sha256 "d4b2c323725bffbb6d1591de5c87a6baa008101884c0150e3dc52dd0de20508a"
 
         def install
           bin.install "ftr"
