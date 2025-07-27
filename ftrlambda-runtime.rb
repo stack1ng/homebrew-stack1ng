@@ -5,23 +5,23 @@
 class FtrlambdaRuntime < Formula
   desc ""
   homepage "https://www.futuralabs.app/"
-  version "0.0.1-lambda"
+  version "0.0.2-lambda"
 
   depends_on "zig"
   depends_on "zstd"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.0.1-lambda/ftr-dist_0.0.1-lambda_darwin_amd64.tar.gz"
-      sha256 "f9a71f051448a0e2db52a213a97449f75fc2c3d12b506b1e46c0626777264114"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.0.2-lambda/ftr-dist_0.0.2-lambda_darwin_amd64.tar.gz"
+      sha256 "6fdde24829d672c4972542744732f78b66187ccf0ef02cb641aed00b38eed8f3"
 
       def install
         bin.install "ftr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.0.1-lambda/ftr-dist_0.0.1-lambda_darwin_arm64.tar.gz"
-      sha256 "cf18cb1d8c4495406018fef9e7790a9367592846b872e51512861bff69863a87"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.0.2-lambda/ftr-dist_0.0.2-lambda_darwin_arm64.tar.gz"
+      sha256 "865b47c5685f5c70608923442bd962b06c6a8f31c0fd584fe0c69268aaf9e2a7"
 
       def install
         bin.install "ftr"
@@ -31,15 +31,15 @@ class FtrlambdaRuntime < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.0.1-lambda/ftr-dist_0.0.1-lambda_linux_amd64.tar.gz"
-      sha256 "3268bbec3aa1d21e8bc692982c4ee4114673ca3904570ad1a2b337918ee20d2e"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.0.2-lambda/ftr-dist_0.0.2-lambda_linux_amd64.tar.gz"
+      sha256 "c82fc5ffc7ff926300b9bce11ca10d17209041b8f58b647399f778c8c7066b6a"
       def install
         bin.install "ftr"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.0.1-lambda/ftr-dist_0.0.1-lambda_linux_arm64.tar.gz"
-      sha256 "2b8750bbedde1e77c49ebbe3b6ebe8febada5fc85edb6b87d384216d94dd9225"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.0.2-lambda/ftr-dist_0.0.2-lambda_linux_arm64.tar.gz"
+      sha256 "359ffced99e9fdb292e85584728fe54639a718e3887a6d8eae77f2694e989ad6"
       def install
         bin.install "ftr"
       end
