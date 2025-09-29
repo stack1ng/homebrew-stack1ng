@@ -5,23 +5,23 @@
 class Ftr < Formula
   desc ""
   homepage "https://www.futuralabs.app/"
-  version "0.3.3"
+  version "0.3.4"
 
   depends_on "zig"
   depends_on "zstd"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.3.3/ftr-dist_0.3.3_darwin_amd64.tar.gz"
-      sha256 "21394f8c7dc558c9f985240a4102b5bf1bdea7e5a3baf3603b3328ee13b2eb1a"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.3.4/ftr-dist_0.3.4_darwin_amd64.tar.gz"
+      sha256 "2d8bb9b70933114d76a7e03d4e779f0015008aa41b934f59c3f38298d10ed0ca"
 
       def install
         bin.install "ftr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.3.3/ftr-dist_0.3.3_darwin_arm64.tar.gz"
-      sha256 "3b01b7df4a6fca459896d77e3601872820c3cf3d20469ae3cf335ca7ce4f19bb"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.3.4/ftr-dist_0.3.4_darwin_arm64.tar.gz"
+      sha256 "66559729de55a0a9255c49b3d871a835ee79787c09e7ea64c4e16d4a0d2b967f"
 
       def install
         bin.install "ftr"
@@ -31,15 +31,15 @@ class Ftr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.3.3/ftr-dist_0.3.3_linux_amd64.tar.gz"
-      sha256 "9f698dc966b915736eb6a47cd119afd8974bb14eecc22e436649eaf1fb587744"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.3.4/ftr-dist_0.3.4_linux_amd64.tar.gz"
+      sha256 "79f36ee818017a24c1f6a30680273a0653f7b4294ec5f9c295cb169d76174a2c"
       def install
         bin.install "ftr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.3.3/ftr-dist_0.3.3_linux_arm64.tar.gz"
-      sha256 "be720d1a327dcd1ab89fec23c187f8f966197d0f20fd85845905c46bb9981985"
+      url "https://github.com/futura-platform/ftr-dist/releases/download/v0.3.4/ftr-dist_0.3.4_linux_arm64.tar.gz"
+      sha256 "8448be00e52c772d739bf708bf6d3e008839c6d918e1dae630719a32964768e8"
       def install
         bin.install "ftr"
       end
